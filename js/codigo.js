@@ -1,3 +1,4 @@
+/*
 var cartonJuan = 
 {
     "Dueño": "Juan",
@@ -49,10 +50,9 @@ var cartonMili =
         "Linea3" : [9,12,42,49,66]
     }
 };
-
+*/
 var cartones = [];
-
-cartones.push(cartonJuan, cartonMili);
+//cartones.push(cartonJuan, cartonMili);
 
 var CantarNumero = function (numeroCantado) {
 
@@ -64,17 +64,17 @@ var CantarNumero = function (numeroCantado) {
         if (!carton.EstaCompleto)
         {
             //linea 1
-            var resultados1 = BuscarYMarcarEnLinea(carton.Dueño, 1, carton.LineasMarcas.Linea1, carton.LineasOriginales.Linea1, numeroCantado)
+            var resultados1 = BuscarYMarcarEnLinea(carton, carton.Dueño, 1, carton.LineasMarcas.Linea1, carton.LineasOriginales.Linea1, numeroCantado)
             carton.LineasMarcas.Linea1 = resultados1[0];
             carton.LineasOriginales.Linea1 = resultados1[1];
             
             //linea 2
-            var resultados2 = BuscarYMarcarEnLinea(carton.Dueño, 2, carton.LineasMarcas.Linea2, carton.LineasOriginales.Linea2, numeroCantado)
+            var resultados2 = BuscarYMarcarEnLinea(carton, carton.Dueño, 2, carton.LineasMarcas.Linea2, carton.LineasOriginales.Linea2, numeroCantado)
             carton.LineasMarcas.Linea2 = resultados2[0];
             carton.LineasOriginales.Linea2 = resultados2[1];
 
             //linea 3
-            var resultados3 = BuscarYMarcarEnLinea(carton.Dueño, 3, carton.LineasMarcas.Linea3, carton.LineasOriginales.Linea3, numeroCantado)
+            var resultados3 = BuscarYMarcarEnLinea(carton, carton.Dueño, 3, carton.LineasMarcas.Linea3, carton.LineasOriginales.Linea3, numeroCantado)
             carton.LineasMarcas.Linea3 = resultados3[0];
             carton.LineasOriginales.Linea3 = resultados3[1];
 
@@ -87,14 +87,19 @@ var CantarNumero = function (numeroCantado) {
     });
 }
 
-var BuscarYMarcarEnLinea = function (dueño, numeroLinea, linea, lineaOriginal, numero) {
+var BuscarYMarcarEnLinea = function (cartonX, dueño, numeroLinea, linea, lineaOriginal, numero) {
     if (!lineaOriginal.EstaCompleta) {
         posicion = linea.findIndex(numeroEnFila => numeroEnFila == numero);
-        if (posicion != -1)
+        if (posicion != -1) {
+            var idTr = dueño + cartonX.ColFil + numero;
+            console.log(idTr);
+            $("#"+idTr).addClass(" bg-celda-mediumseagreen");
+            //miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea1.Celdas[0]
             linea.splice(posicion, 1);
+        }
     
         if (linea.length == 0) {
-            alert("Linea completa! -> Linea n°" + numeroLinea + " - Ganador:" + dueño + " - Linea: " + lineaOriginal.Celdas.toString());
+            alert("Linea completa! \n\n-Linea n°" + numeroLinea + " \n\n-Carton Ganador:" + dueño + " \n\n-Numeros: " + lineaOriginal.Celdas.toString());
             lineaOriginal.EstaCompleta = true;
         }
     }
@@ -151,3 +156,114 @@ var CantarVariosNumeros = function(numerosTxt) {
         CantarNumero(numeroACantar);       
     });
 }
+
+
+/**** Para la vista *****/
+
+var lanzarModalNuevoCarton = function () {
+    $("#idModalNuevoCarton").modal();
+}
+
+var lanzarModalConfiguracion = function () {
+    $("#idModalAjustes").modal();
+}
+
+var ModalAjusteGuardar = function () {
+    var entradas = $("#idInputModalAjustes").val();
+    //console.log(entradas);
+    CantarVariosNumeros(entradas);
+}
+
+var CargarJsonCartones = function () {
+    $.getJSON( "dataSource/cartonesEntity.json", function( data ) {
+        cartones = cartones.concat(data.CartonesBingo);
+        console.log(cartones);
+    });
+}
+
+var VerCartones = function () {
+    console.log(cartones);
+}
+
+$(document).ready(function () {
+    CargarJsonCartones();
+    console.log("cartones cargados!");
+    MostrarCartones();
+});
+
+var MostrarCartones = function () {
+    var contCarton = 0;
+    var esPrimero = true;
+    var crearPagina = true;
+    var nuevaColumna = true;
+    var colIzqCerrada = false;
+    var miHtml = "";
+    
+    cartones.forEach(miCarton => {
+        //debugger;
+        if (crearPagina) {
+            colIzqCerrada = false;
+            nuevaColumna = true;
+            if (!esPrimero) {
+                miHtml = miHtml + "</div>"
+            }
+            miHtml = miHtml + "<div class='row col'>carton " + miCarton.Pagina +  "</div><div class='row'>";
+            crearPagina = false;
+            esPrimero = false;
+        }
+        
+        if (nuevaColumna) {
+            miHtml = miHtml + "<div class='col-6'>";
+            nuevaColumna = false;
+        }
+
+        miHtml = miHtml + 
+        "<table id='idTabla' class='table table-hover' name='nTablaAlumnos' border='1px'>"+
+            "<tbody>" +
+                "<tr>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea1.Celdas[0] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea1.Celdas[0] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea1.Celdas[1] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea1.Celdas[1] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea1.Celdas[2] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea1.Celdas[2] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea1.Celdas[3] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea1.Celdas[3] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea1.Celdas[4] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea1.Celdas[4] + "</td>" +
+                "</tr>" +
+                "<tr>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea2.Celdas[0] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea2.Celdas[0] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea2.Celdas[1] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea2.Celdas[1] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea2.Celdas[2] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea2.Celdas[2] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea2.Celdas[3] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea2.Celdas[3] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea2.Celdas[4] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea2.Celdas[4] + "</td>" +
+                "</tr>" +
+                "<tr>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea3.Celdas[0] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea3.Celdas[0] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea3.Celdas[1] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea3.Celdas[1] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea3.Celdas[2] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea3.Celdas[2] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea3.Celdas[3] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea3.Celdas[3] + "</td>" +
+                    "<td id='" + miCarton.Dueño + miCarton.ColFil + miCarton.LineasOriginales.Linea3.Celdas[4] + "' class='columna-ajustada'>" + miCarton.LineasOriginales.Linea3.Celdas[4] + "</td>" +
+                "</tr>" +
+            "</tbody>" +
+        "</table>";
+
+        contCarton = contCarton + 1;
+
+        if (contCarton == 3) {
+            nuevaColumna = true
+            if (!colIzqCerrada){
+                miHtml = miHtml + "</div>"
+                colIzqCerrada = true
+            }
+        }
+
+        if (contCarton == 6) {
+            contCarton = 0;
+            crearPagina = true;
+            miHtml = miHtml + "</div> <hr width='1' size='500'>"
+        }
+        
+    });
+
+    $("#idTablaCartones > tbody").empty();
+    $("#idTablaCartones").append(miHtml);
+
+}
+

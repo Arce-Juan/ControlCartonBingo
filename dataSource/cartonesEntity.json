@@ -1,0 +1,1252 @@
+{
+    "CartonesBingo" : [
+        {
+            "Dueño": "Pag_254",
+            "Pagina": "Pag. 254",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [7,14,44,67,88,25,32,59,70,89,18,39,48,69,76],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [7,14,44,67,88],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [25,32,59,70,89],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [18,39,48,69,76],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [7,14,44,67,88],
+                "Linea2" : [25,32,59,70,89],
+                "Linea3" : [18,39,48,69,76]
+            }
+        },
+        {
+            "Dueño": "Pag_254",
+            "Pagina": "Pag. 254",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [4,23,53,75,81,11,31,41,62,77,26,38,56,65,85],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [4,23,53,75,81],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [11,31,41,62,77],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [26,38,56,65,85],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [4,23,53,75,81],
+                "Linea2" : [11,31,41,62,77],
+                "Linea3" : [26,38,56,65,85]
+            }
+        },
+        {
+            "Dueño": "Pag_254",
+            "Pagina": "Pag. 254",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [6,13,42,60,80,20,37,51,71,83,19,29,49,52,74],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [6,13,42,60,80],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [20,37,51,71,83],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [19,29,49,52,74],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [6,13,42,60,80],
+                "Linea2" : [20,37,51,71,83],
+                "Linea3" : [19,29,49,52,74]
+            }
+        },
+        {
+            "Dueño": "Pag_254",
+            "Pagina": "Pag. 254",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [12,21,47,57,90,3,22,30,61,72,5,15,33,58,64],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [12,21,47,57,90],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [3,22,30,61,72],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [5,15,33,58,64],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [12,21,47,57,90],
+                "Linea2" : [3,22,30,61,72],
+                "Linea3" : [5,15,33,58,64]
+            }
+        },
+        {
+            "Dueño": "Pag_254",
+            "Pagina": "Pag. 254",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [1,10,40,73,84,8,24,36,50,68,27,43,54,78,87],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [1,10,40,73,84],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [8,24,36,50,68],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [27,43,54,78,87],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [1,10,40,73,84],
+                "Linea2" : [8,24,36,50,68],
+                "Linea3" : [27,43,54,78,87]
+            }
+        },
+        {
+            "Dueño": "Pag_254",
+            "Pagina": "Pag. 254",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [2,34,45,79,82,16,28,55,63,86,9,17,35,46,66],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [2,34,45,79,82],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [16,28,55,63,86],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [9,17,35,46,66],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [2,34,45,79,82],
+                "Linea2" : [16,28,55,63,86],
+                "Linea3" : [9,17,35,46,66]
+            }
+        },
+        {
+            "Dueño": "Pag_266",
+            "Pagina": "Pag. 266",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [15,21,50,61,81,26,41,57,72,85,5,36,45,69,76],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [15,21,50,61,81],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [26,41,57,72,85],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [5,36,45,69,76],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [15,21,50,61,81],
+                "Linea2" : [26,41,57,72,85],
+                "Linea3" : [5,36,45,69,76]
+            }
+        },
+        {
+            "Dueño": "Pag_266",
+            "Pagina": "Pag. 266",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [2,20,44,75,86,29,30,58,62,88,6,12,37,46,66],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [2,20,44,75,86],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [29,30,58,62,88],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [6,12,37,46,66],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [2,20,44,75,86],
+                "Linea2" : [29,30,58,62,88],
+                "Linea3" : [6,12,37,46,66]
+            }
+        },
+        {
+            "Dueño": "Pag_266",
+            "Pagina": "Pag. 266",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [13,31,43,67,87,22,35,52,73,90,8,17,49,59,74],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [13,31,43,67,87],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [22,35,52,73,90],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [8,17,49,59,74],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [13,31,43,67,87],
+                "Linea2" : [22,35,52,73,90],
+                "Linea3" : [8,17,49,59,74]
+            }
+        },
+        {
+            "Dueño": "Pag_266",
+            "Pagina": "Pag. 266",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [16,24,54,70,80,4,25,32,56,78,18,39,48,60,89],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [16,24,54,70,80],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [4,25,32,56,78],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [18,39,48,60,89],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [16,24,54,70,80],
+                "Linea2" : [4,25,32,56,78],
+                "Linea3" : [18,39,48,60,89]
+            }
+        },
+        {
+            "Dueño": "Pag_266",
+            "Pagina": "Pag. 266",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [1,10,40,71,82,19,38,47,64,79,9,23,51,68,84],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [1,10,40,71,82],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [19,38,47,64,79],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [9,23,51,68,84],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [1,10,40,71,82],
+                "Linea2" : [19,38,47,64,79],
+                "Linea3" : [9,23,51,68,84]
+            }
+        },
+        {
+            "Dueño": "Pag_266",
+            "Pagina": "Pag. 266",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [3,11,33,53,63,7,27,34,65,83,14,28,42,55,77],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [3,11,33,53,63],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [7,27,34,65,83],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [14,28,42,55,77],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [3,11,33,53,63],
+                "Linea2" : [7,27,34,65,83],
+                "Linea3" : [14,28,42,55,77]
+            }
+        },
+        {
+            "Dueño": "Pag_260",
+            "Pagina": "Pag. 260",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [3,13,41,66,85,24,33,52,74,88,15,25,47,54,78],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [3,13,41,66,85],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [24,33,52,74,88],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [15,25,47,54,78],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [3,13,41,66,85],
+                "Linea2" : [24,33,52,74,88],
+                "Linea3" : [15,25,47,54,78]
+            }
+        },
+        {
+            "Dueño": "Pag_260",
+            "Pagina": "Pag. 260",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [2,20,56,70,82,12,31,44,64,73,28,34,58,68,84],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [2,20,56,70,82],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [12,31,44,64,73],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [28,34,58,68,84],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [2,20,56,70,82],
+                "Linea2" : [12,31,44,64,73],
+                "Linea3" : [28,34,58,68,84]
+            }
+        },
+        {
+            "Dueño": "Pag_260",
+            "Pagina": "Pag. 260",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [4,30,40,72,80,11,29,53,60,86,8,17,38,49,69],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [4,30,40,72,80],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [11,29,53,60,86],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [8,17,38,49,69],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [4,30,40,72,80],
+                "Linea2" : [11,29,53,60,86],
+                "Linea3" : [8,17,38,49,69]
+            }
+        },
+        {
+            "Dueño": "Pag_260",
+            "Pagina": "Pag. 260",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [6,10,42,61,81,21,35,55,75,87,16,37,45,67,76],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [6,10,42,61,81],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [21,35,55,75,87],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [16,37,45,67,76],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [6,10,42,61,81],
+                "Linea2" : [21,35,55,75,87],
+                "Linea3" : [16,37,45,67,76]
+            }
+        },
+        {
+            "Dueño": "Pag_260",
+            "Pagina": "Pag. 260",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [14,22,43,51,83,7,26,32,62,71,9,19,36,59,63],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [14,22,43,51,83],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [7,26,32,62,71],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [9,19,36,59,63],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [14,22,43,51,83],
+                "Linea2" : [7,26,32,62,71],
+                "Linea3" : [9,19,36,59,63]
+            }
+        },
+        {
+            "Dueño": "Pag_260",
+            "Pagina": "Pag. 260",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [1,18,46,77,89,5,23,39,50,65,27,48,57,79,90],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [1,18,46,77,89],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [5,23,39,50,65],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [27,48,57,79,90],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [1,18,46,77,89],
+                "Linea2" : [5,23,39,50,65],
+                "Linea3" : [27,48,57,79,90]
+            }
+        },
+        {
+            "Dueño": "Pag_104",
+            "Pagina": "Pag. 104",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [24,37,56,68,80,10,38,41,76,82,6,18,44,69,78],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [24,37,56,68,80],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [10,38,41,76,82],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [6,18,44,69,78],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [24,37,56,68,80],
+                "Linea2" : [10,38,41,76,82],
+                "Linea3" : [6,18,44,69,78]
+            }
+        },
+        {
+            "Dueño": "Pag_104",
+            "Pagina": "Pag. 104",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [5,13,46,61,70,15,33,53,71,83,21,34,58,66,87],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [5,13,46,61,70],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [15,33,53,71,83],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [21,34,58,66,87],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [5,13,46,61,70],
+                "Linea2" : [15,33,53,71,83],
+                "Linea3" : [21,34,58,66,87]
+            }
+        },
+        {
+            "Dueño": "Pag_104",
+            "Pagina": "Pag. 104",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [23,42,50,72,85,1,26,36,52,88,7,11,39,47,62],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [23,42,50,72,85],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [1,26,36,52,88],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [7,11,39,47,62],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [23,42,50,72,85],
+                "Linea2" : [1,26,36,52,88],
+                "Linea3" : [7,11,39,47,62]
+            }
+        },
+        {
+            "Dueño": "Pag_104",
+            "Pagina": "Pag. 104",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [14,32,48,63,74,16,22,51,77,81,4,28,49,57,86],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [14,32,48,63,74],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [16,22,51,77,81],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [4,28,49,57,86],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [14,32,48,63,74],
+                "Linea2" : [16,22,51,77,81],
+                "Linea3" : [4,28,49,57,86]
+            }
+        },
+        {
+            "Dueño": "Pag_104",
+            "Pagina": "Pag. 104",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [2,20,43,64,84,12,31,45,65,75,3,29,54,79,90],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [2,20,43,64,84],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [12,31,45,65,75],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [3,29,54,79,90],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [2,20,43,64,84],
+                "Linea2" : [12,31,45,65,75],
+                "Linea3" : [3,29,54,79,90]
+            }
+        },
+        {
+            "Dueño": "Pag_104",
+            "Pagina": "Pag. 104",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [8,17,30,55,60,9,25,35,67,73,19,27,40,59,89],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [8,17,30,55,60],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [9,25,35,67,73],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [19,27,40,59,89],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [8,17,30,55,60],
+                "Linea2" : [9,25,35,67,73],
+                "Linea3" : [19,27,40,59,89]
+            }
+        },
+        {
+            "Dueño": "Pag_119",
+            "Pagina": "Pag. 119",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [4,14,32,52,66,9,22,34,67,80,18,28,44,58,79],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [4,14,32,52,66],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [9,22,34,67,80],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [18,28,44,58,79],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [4,14,32,52,66],
+                "Linea2" : [9,22,34,67,80],
+                "Linea3" : [18,28,44,58,79]
+            }
+        },
+        {
+            "Dueño": "Pag_119",
+            "Pagina": "Pag. 119",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [13,26,51,70,82,1,29,31,54,71,19,36,46,69,89],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [13,26,51,70,82],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [1,29,31,54,71],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [19,36,46,69,89],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [13,26,51,70,82],
+                "Linea2" : [1,29,31,54,71],
+                "Linea3" : [19,36,46,69,89]
+            }
+        },
+        {
+            "Dueño": "Pag_119",
+            "Pagina": "Pag. 119",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [15,35,47,65,83,23,38,56,73,90,3,17,49,57,77],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [15,35,47,65,83],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [23,38,56,73,90],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [3,17,49,57,77],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [15,35,47,65,83],
+                "Linea2" : [23,38,56,73,90],
+                "Linea3" : [3,17,49,57,77]
+            }
+        },
+        {
+            "Dueño": "Pag_119",
+            "Pagina": "Pag. 119",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [2,20,40,74,86,21,33,59,62,87,6,12,37,41,63],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [2,20,40,74,86],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [21,33,59,62,87],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [6,12,37,41,63],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [2,20,40,74,86],
+                "Linea2" : [21,33,59,62,87],
+                "Linea3" : [6,12,37,41,63]
+            }
+        },
+        {
+            "Dueño": "Pag_119",
+            "Pagina": "Pag. 119",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [10,24,50,60,81,25,45,55,72,88,5,30,48,68,75],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [10,24,50,60,81],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [25,45,55,72,88],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [5,30,48,68,75],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [10,24,50,60,81],
+                "Linea2" : [25,45,55,72,88],
+                "Linea3" : [5,30,48,68,75]
+            }
+        },
+        {
+            "Dueño": "Pag_119",
+            "Pagina": "Pag. 119",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [7,11,42,76,84,16,39,43,61,78,8,27,53,64,85],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [7,11,42,76,84],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [16,39,43,61,78],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [8,27,53,64,85],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [7,11,42,76,84],
+                "Linea2" : [16,39,43,61,78],
+                "Linea3" : [8,27,53,64,85]
+            }
+        },
+        {
+            "Dueño": "Pag_256",
+            "Pagina": "Pag. 256",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [1,11,34,52,61,3,21,36,64,81,15,24,48,59,75],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [1,11,34,52,61],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [3,21,36,64,81],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [15,24,48,59,75],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [1,11,34,52,61],
+                "Linea2" : [3,21,36,64,81],
+                "Linea3" : [15,24,48,59,75]
+            }
+        },
+        {
+            "Dueño": "Pag_256",
+            "Pagina": "Pag. 256",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [10,22,54,72,82,2,27,30,56,73,13,31,47,67,84],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [10,22,54,72,82],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [2,27,30,56,73],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [13,31,47,67,84],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [10,22,54,72,82],
+                "Linea2" : [2,27,30,56,73],
+                "Linea3" : [13,31,47,67,84]
+            }
+        },
+        {
+            "Dueño": "Pag_256",
+            "Pagina": "Pag. 256",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [14,37,44,63,83,20,39,55,76,88,6,17,46,57,79],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [14,37,44,63,83],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [20,39,55,76,88],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [6,17,46,57,79],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [14,37,44,63,83],
+                "Linea2" : [20,39,55,76,88],
+                "Linea3" : [6,17,46,57,79]
+            }
+        },
+        {
+            "Dueño": "Pag_256",
+            "Pagina": "Pag. 256",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [5,26,42,74,89,28,32,58,62,90,9,12,33,49,69],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [5,26,42,74,89],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [28,32,58,62,90],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [9,12,33,49,69],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [5,26,42,74,89],
+                "Linea2" : [28,32,58,62,90],
+                "Linea3" : [9,12,33,49,69]
+            }
+        },
+        {
+            "Dueño": "Pag_256",
+            "Pagina": "Pag. 256",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [18,23,50,60,80,25,40,53,71,86,8,35,41,68,77],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [18,23,50,60,80],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [25,40,53,71,86],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [8,35,41,68,77],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [18,23,50,60,80],
+                "Linea2" : [25,40,53,71,86],
+                "Linea3" : [8,35,41,68,77]
+            }
+        },
+        {
+            "Dueño": "Pag_256",
+            "Pagina": "Pag. 256",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [4,16,43,70,85,19,38,45,65,78,7,29,51,66,87],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [4,16,43,70,85],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [19,38,45,65,78],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [7,29,51,66,87],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [4,16,43,70,85],
+                "Linea2" : [19,38,45,65,78],
+                "Linea3" : [7,29,51,66,87]
+            }
+        },
+        {
+            "Dueño": "Pag_118",
+            "Pagina": "Pag. 118",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [3,11,31,56,63,9,25,36,68,86,13,29,45,58,74],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [3,11,31,56,63],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [9,25,36,68,86],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [13,29,45,58,74 ],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [3,11,31,56,63],
+                "Linea2" : [9,25,36,68,86],
+                "Linea3" : [13,29,45,58,74]
+            }
+        },
+        {
+            "Dueño": "Pag_118",
+            "Pagina": "Pag. 118",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [10,24,50,71,80,6,28,30,57,73,12,35,43,61,82],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [10,24,50,71,80],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [6,28,30,57,73],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [12,35,43,61,82],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [10,24,50,71,80],
+                "Linea2" : [6,28,30,57,73],
+                "Linea3" : [12,35,43,61,82]
+            }
+        },
+        {
+            "Dueño": "Pag_118",
+            "Pagina": "Pag. 118",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [16,32,44,69,81,22,34,52,70,88,1,18,46,55,77],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [16,32,44,69,81],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [22,34,52,70,88],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [1,18,46,55,77],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [16,32,44,69,81],
+                "Linea2" : [22,34,52,70,88],
+                "Linea3" : [1,18,46,55,77]
+            }
+        },
+        {
+            "Dueño": "Pag_118",
+            "Pagina": "Pag. 118",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [5,23,42,76,85,26,33,59,64,89,7,15,39,48,66],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [5,23,42,76,85],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [26,33,59,64,89],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [7,15,39,48,66],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [5,23,42,76,85],
+                "Linea2" : [26,33,59,64,89],
+                "Linea3" : [7,15,39,48,66]
+            }
+        },
+        {
+            "Dueño": "Pag_118",
+            "Pagina": "Pag. 118",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [14,21,51,62,83,27,40,54,75,90,8,37,41,67,79],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [14,21,51,62,83],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [27,40,54,75,90],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [8,37,41,67,79],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [14,21,51,62,83],
+                "Linea2" : [27,40,54,75,90],
+                "Linea3" : [8,37,41,67,79]
+            }
+        },
+        {
+            "Dueño": "Pag_118",
+            "Pagina": "Pag. 118",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [2,17,47,72,84,19,38,49,60,78,4,20,53,65,87],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [2,17,47,72,84],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [19,38,49,60,78],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [4,20,53,65,87],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [2,17,47,72,84],
+                "Linea2" : [19,38,49,60,78],
+                "Linea3" : [4,20,53,65,87]
+            }
+        },
+        {
+            "Dueño": "Pag_279",
+            "Pagina": "Pag. 279",
+            "ColFil": "col1-fil1",
+            "CartonOriginal": [5,16,43,62,83,26,32,52,71,90,19,27,45,56,76],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [5,16,43,62,83],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [26,32,52,71,90],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [19,27,45,56,76],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [5,16,43,62,83],
+                "Linea2" : [26,32,52,71,90],
+                "Linea3" : [19,27,45,56,76]
+            }
+        },
+        {
+            "Dueño": "Pag_279",
+            "Pagina": "Pag. 279",
+            "ColFil": "col1-fil2",
+            "CartonOriginal": [2,23,50,70,80,18,31,48,64,74,28,36,58,68,81],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [2,23,50,70,80],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [18,31,48,64,74],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [28,36,58,68,81],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [2,23,50,70,80 ],
+                "Linea2" : [18,31,48,64,74],
+                "Linea3" : [28,36,58,68,81]
+            }
+        },
+        {
+            "Dueño": "Pag_279",
+            "Pagina": "Pag. 279",
+            "ColFil": "col1-fil3",
+            "CartonOriginal": [1,30,41,72,84,11,20,54,61,86,7,17,37,42,66],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [1,30,41,72,84],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [11,20,54,61,86],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [7,17,37,42,66],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [1,30,41,72,84],
+                "Linea2" : [11,20,54,61,86],
+                "Linea3" : [7,17,37,42,66]
+            }
+        },
+        {
+            "Dueño": "Pag_279",
+            "Pagina": "Pag. 279",
+            "ColFil": "col2-fil1",
+            "CartonOriginal": [9,12,40,63,82,25,33,55,77,87,14,34,49,69,78],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [9,12,40,63,82],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [25,33,55,77,87],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [14,34,49,69,78],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [9,12,40,63,82],
+                "Linea2" : [25,33,55,77,87],
+                "Linea3" : [14,34,49,69,78]
+            }
+        },
+        {
+            "Dueño": "Pag_279",
+            "Pagina": "Pag. 279",
+            "ColFil": "col2-fil2",
+            "CartonOriginal": [10,24,44,51,85,4,29,35,60,79,8,13,38,53,65],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [10,24,44,51,85],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [4,29,35,60,79],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [8,13,38,53,65],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [10,24,44,51,85],
+                "Linea2" : [4,29,35,60,79],
+                "Linea3" : [8,13,38,53,65]
+            }
+        },
+        {
+            "Dueño": "Pag_279",
+            "Pagina": "Pag. 279",
+            "ColFil": "col2-fil3",
+            "CartonOriginal": [3,15,46,73,88,6,21,39,57,67,22,47,59,75,89],
+            "EstaCompleto" : false,
+            "LineasOriginales": {
+                "Linea1" : {
+                    "Celdas" : [3,15,46,73,88],
+                    "EstaCompleta" : false
+                },
+                "Linea2" : {
+                    "Celdas" : [6,21,39,57,67],
+                    "EstaCompleta" : false
+                },
+                "Linea3" : {
+                    "Celdas" : [22,47,59,75,89],
+                    "EstaCompleta" : false
+                }
+            },
+            "LineasMarcas": {
+                "Linea1" : [3,15,46,73,88],
+                "Linea2" : [6,21,39,57,67],
+                "Linea3" : [22,47,59,75,89]
+            }
+        }
+    ]
+}
