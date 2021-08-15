@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+
+    <style type="text/css">
+        .columna-ajustada
+        {
+            vertical-align: middle !important;
+            text-align:center !important;
+            padding: 2px !important;
+        }
+        .bg-celda-burlywood
+        {
+            background-color: burlywood !important;
+        }
+        .bg-celda-crimson
+        {
+            background-color: crimson !important;
+        }
+        .bg-celda-darkgreen
+        {
+            background-color: darkgreen !important;
+        }
+        .bg-celda-deepskyblue
+        {
+            background-color: deepskyblue !important;
+        }
+        .bg-celda-mediumseagreen
+        {
+            background-color: mediumseagreen !important;
+        }
+        .bg-celda-yellow
+        {
+            background-color: yellow !important;
+        }
+        .bg-celda-marron
+        {
+            background-color: rgb(155, 122, 91) !important;
+        }
+        .background-color-textArea
+        {
+            background-color: rgb(69, 184, 16) !important;
+        }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <script src="jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="JavaScript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script language="JavaScript" src="js/codigo.js"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">HAMMING - Detección y Corección de Errores</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href=""><i class="fa fa-home"></i>  Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="lanzarModalAlumno();"> <i class="fa fa-user"></i> Alumno <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="container" style="max-width: 100%; background-color:#F8F9F9">
+
+                    <div class="form-row justify-content-center" style="margin-bottom: 7px;">
+                        <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm">Cadena a Enviar: </label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm solo-numero-binario" id="idInputCadenaEnviada" name="nInputCadenaEnviada" placeholder="Ej.: 0011010" maxlength="7">
+                        </div>
+                        <div class="col-sm-1">
+                            <i class="fa fa-pencil" aria-hidden="true" onclick="GenerarBinarioAutomaticamente();" title="Generar un binario aleatorio" ></i>
+                        </div>
+                        <div class="col-sm-1">
+                            <button type="button" id="idButtonAvanzar" class="btn btn-primary btn-sm" onclick="AccionCodificar();">&gt;&gt;</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <table id="idTablaCodificacion" class="table table-hover" name="nTablaAlumnos" border="1px">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>n+p</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n7</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n6</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n5</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p4</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n4</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n3</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n2</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p3</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n1</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p2</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p1</b></th>
+                                </tr>
+
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>pos. decimal</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>11</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>10</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>9</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>8</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>7</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>6</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>5</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>4</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>3</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>2</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1</b></th>
+                                </tr>
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>pos. binario</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1011</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1010</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1001</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1000</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0111</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0110</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0101</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0100</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0011</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0010</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0001</b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="columna-ajustada bg-celda-burlywood" scope="col"><b>N°</b></td>
+                                    <td id="idIndice11" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idIndice10" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idIndice9" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idIndice8" class="columna-ajustada bg-celda-burlywood" scope="col"><b>x</b></td>
+                                    <td id="idIndice7" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idIndice6" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idIndice5" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idIndice4" class="columna-ajustada bg-celda-burlywood" scope="col"><b>x</b></td>
+                                    <td id="idIndice3" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idIndice2" class="columna-ajustada bg-celda-burlywood" scope="col"><b>x</b></td>
+                                    <td id="idIndice1" class="columna-ajustada bg-celda-burlywood" scope="col"><b>x</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P1</td>
+                                    <td id="P0-1011" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P0-1001" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P0-0111" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P0-0101" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P0-0011" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P0-0001" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P2</td>
+                                    <td id="P1-1011" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td id="P1-1010" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P1-0111" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td id="P1-0110" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P1-0011" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td id="P1-0010" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P3</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="P2-0111" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td id="P2-0110" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td id="P2-0101" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td id="P2-0100" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P4</td>
+                                    <td id="P3-1011" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td id="P3-1010" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td id="P3-1001" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td id="P3-1000" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                </tr>
+                            </tbody>
+                            <thead class="thead-dark columna-ajustada">
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>n+p a TX</b></th>
+                                    <th id="idCeldaCodif-1011" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-1010" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-1001" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-1000" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-0111" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-0110" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-0101" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-0100" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-0011" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-0010" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="idCeldaCodif-0001" class="columna-ajustada" scope="col"><b></b></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="form-row justify-content-center" style="margin-bottom: 7px;">
+                        <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm">Cadena Codificada</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm solo-numero-binario" id="idInputCadenaRecibida" maxlength="11" name="nInputCadenaRecibida" placeholder=""  value="">
+                        </div>
+                        <div class="col-sm-1">
+                            <i class="fa fa-undo" aria-hidden="true" onclick="RestablecerDecodificar();" title="Restablecer Decodificacion" ></i>
+                        </div>
+                        <div class="col-sm-1">
+                            <button type="button" id="idButtonAvanzarDecodificar" class="btn btn-primary btn-sm" onclick="AccionDecodificar();">&gt;&gt;</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <table id="idTablaDecodificacion" class="table table-hover" name="nTablaAlumnos" border="1px">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>n+p</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n7</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n6</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n5</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p4</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n4</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n3</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n2</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p3</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>n1</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p2</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>p1</b></th>
+                                </tr>
+
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>pos. decimal</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>11</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>10</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>9</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>8</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>7</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>6</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>5</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>4</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>3</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>2</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1</b></th>
+                                </tr>
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>pos. binario</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1011</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1010</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1001</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>1000</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0111</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0110</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0101</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0100</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0011</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0010</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>0001</b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="columna-ajustada bg-celda-burlywood" scope="col"><b>N°</b></td>
+                                    <td id="idTDIndice11" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice10" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice9" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice8" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice7" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice6" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice5" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice4" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice3" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice2" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></td>
+                                    <td id="idTDIndice1" class="columna-ajustada bg-celda-burlywood" scope="col"><b></b></th>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P1</td>
+                                    <td id="TDP0-1011" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP0-1001" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP0-0111" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP0-0101" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP0-0011" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP0-0001" class="columna-ajustada bg-celda-deepskyblue">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P2</td>
+                                    <td id="TDP1-1011" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td id="TDP1-1010" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP1-0111" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td id="TDP1-0110" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP1-0011" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td id="TDP1-0010" class="columna-ajustada bg-celda-mediumseagreen">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P3</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td id="TDP2-0111" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td id="TDP2-0110" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td id="TDP2-0101" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td id="TDP2-0100" class="columna-ajustada bg-celda-yellow">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="columna-ajustada">P4</td>
+                                    <td id="TDP3-1011" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td id="TDP3-1010" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td id="TDP3-1001" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td id="TDP3-1000" class="columna-ajustada bg-celda-marron">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                    <td class="columna-ajustada">-</td>
+                                </tr>
+                            </tbody>
+                            <thead class="thead-dark columna-ajustada">
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>C.D.</b></th>
+                                    <th id="TDidCeldaCodif11" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif10" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif9" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif8" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif7" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif6" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif5" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif4" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif3" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif2" class="columna-ajustada" scope="col"><b></b></th>
+                                    <th id="TDidCeldaCodif1" class="columna-ajustada" scope="col"><b></b></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <table id="idTablaResultado" class="table table-hover" name="nTablaAlumnos" border="1px">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="columna-ajustada" colspan="4" scope="col"><b>Tabla de Verificación</b></th>
+                                </tr>
+                            </thead>
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="columna-ajustada" scope="col"><b>P4</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>P3</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>P2</b></th>
+                                    <th class="columna-ajustada" scope="col"><b>P1</b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="TRresultadoP3" class="columna-ajustada">-</td>
+                                    <td id="TRresultadoP2" class="columna-ajustada">-</td>
+                                    <td id="TRresultadoP1" class="columna-ajustada">-</td>
+                                    <td id="TRresultadoP0" class="columna-ajustada">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <table id="idTablaResultado" class="table table-hover" name="nTablaAlumnos" border="1px">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="columna-ajustada" colspan="7" scope="col"><b>Cadena Decodificada</b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="TRCadenaDeco7" class="columna-ajustada">-</td>
+                                    <td id="TRCadenaDeco6" class="columna-ajustada">-</td>
+                                    <td id="TRCadenaDeco5" class="columna-ajustada">-</td>
+                                    <td id="TRCadenaDeco4" class="columna-ajustada">-</td>
+                                    <td id="TRCadenaDeco3" class="columna-ajustada">-</td>
+                                    <td id="TRCadenaDeco2" class="columna-ajustada">-</td>
+                                    <td id="TRCadenaDeco1" class="columna-ajustada">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container" style="max-width: 100%; background-color:#F8F9F9">
+                    <br>
+                    <br>
+                    <div class="row">
+                        <textarea id="idTextAreaPaso1Codif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="1">Se coloca la cadena ingresada en la fila N°</textarea>
+                        <textarea id="idTextAreaPaso2Codif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="2">Para cada fila P se debe bajar el numero de N si la posicion en binario es = 1</textarea>
+                        <textarea id="idTextAreaPaso3Codif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="2">Calculamos la pariedad de cada 1 en de cada fila P y reemplazamos en cada X</textarea>
+                        <textarea id="idTextAreaPaso4Codif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="3">Completamos la fila "n+p a TX" bajando el ultimo número obtenido en la cada columna (de n7 a p1) y obtenemos la cadena codificada.</textarea>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <textarea id="idTextAreaPaso1Decodif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="1">Se coloca la cadena recibida en la fila N°</textarea>
+                        <textarea id="idTextAreaPaso2Decodif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="2">Para cada fila P se debe bajar el numero de N si la posicion en binario es = 1</textarea>
+                        <textarea id="idTextAreaPaso3Decodif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="3">Calculamos la pariedad de cada 1 en de cada fila P y reemplazamos los valores en la tabla de verificación</textarea>
+                        <textarea id="idTextAreaPaso4Decodif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="1">Se verifica si hay un error en la cadena recibida</textarea>
+                        <textarea id="idTextAreaPaso5Decodif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="3">Se corrige el error remplazando el número(de 1 a 0 o de 0 a 1) en la cadena recibida y completamos la fila C.D.</textarea>
+                        <textarea id="idTextAreaPaso6Decodif" class="form-control" readonly="readonly" style="resize:none; padding: 0%;" rows="1">Se decodificada la cadena recibida</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    <div id="divMisModales">
+        <style type="text/css">
+            .xcbo_BuscarAlumno_styleInputSmall
+            {
+                text-align:left !important;
+                height: 25px !important;
+                padding-top: 1px !important;
+                padding-bottom: 1px !important;
+                margin-bottom: 0px !important;
+                padding-left: 8px !important;
+                padding-right: 8px !important;
+            }
+        </style>
+
+        <div class="modal fade bd-example-modal" id="idModalBuscarAlumnoPorDNI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none" aria-modal="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Datos Alumno</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 2%;">
+                        <div class="container">
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Universidad:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-8">
+                                    <input type="text" value="Universidad Tecnológica Nacional" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Facultad:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-8">
+                                    <input type="text" value="Facultad Regional Tucumán" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Carrera:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-8">
+                                    <input type="text" value="Ingenieria en Sistemas de Información" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Materia:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-8">
+                                    <input type="text" value="Comunicaciones" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Comisión:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-4">
+                                    <input type="text" value="3K2" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Año:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-4">
+                                    <input type="text" value="2019" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Nombre:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-8">
+                                    <input type="text" value="ARCE JUAN EDUARDO" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px;">
+                                <div class="d-inline col-4">
+                                    Legajo:
+                                </div>
+                                <div class="input-group input-group-sm mb-3 col-4">
+                                    <input type="text" value="31428" disabled class="form-control solo-numero large xcbo_BuscarAlumno_styleInputSmall" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function (){
+            $('.solo-numero-binario').keyup(function (){
+                this.value = (this.value + '').replace(/[^0-1]/g, '');
+            });
+        });
+    </script>
+    </body>
+</html>
