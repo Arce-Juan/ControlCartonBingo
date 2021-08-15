@@ -80,7 +80,7 @@ var CantarNumero = function (numeroCantado) {
 
             //verificamos si hay carton lleno
             if (carton.LineasOriginales.Linea1.EstaCompleta == true && carton.LineasOriginales.Linea2.EstaCompleta == true && carton.LineasOriginales.Linea3.EstaCompleta == true ) {
-                alert("BINGOO!! Ganador: " + carton.dueño + " - Números: " + carton.CartonOriginal.toString());
+                alert("BINGOO!! Ganador: " + carton.Dueño + " - Números: " + carton.CartonOriginal.toString());
                 carton.EstaCompleto = true;
             }
         }
@@ -89,7 +89,7 @@ var CantarNumero = function (numeroCantado) {
 
 var BuscarYMarcarEnLinea = function (dueño, numeroLinea, linea, lineaOriginal, numero) {
     if (!lineaOriginal.EstaCompleta) {
-        posicion = linea.findIndex(numeroEnFila => numeroEnFila === numero);
+        posicion = linea.findIndex(numeroEnFila => numeroEnFila == numero);
         if (posicion != -1)
             linea.splice(posicion, 1);
     
@@ -106,11 +106,15 @@ var CargarCarton = function (dueño, linea1Txt, linea2Txt, linea3Txt) {
     var linea1 = linea1Txt.split(",");
     var linea2 = linea2Txt.split(",");
     var linea3 = linea3Txt.split(",");
-    
+
+    var lineaA = linea1Txt.split(",");
+    var lineaB = linea2Txt.split(",");
+    var lineaC = linea3Txt.split(",");
+
     var datosCarton = [];
-    datosCarton.push(linea1);
-    datosCarton.push(linea2);
-    datosCarton.push(linea3);
+    datosCarton = datosCarton.concat(linea1);
+    datosCarton = datosCarton.concat(linea2);
+    datosCarton = datosCarton.concat(linea3);
 
     var cartonNuevo = 
     {
@@ -132,11 +136,18 @@ var CargarCarton = function (dueño, linea1Txt, linea2Txt, linea3Txt) {
             },
         },
         "LineasMarcas": {
-            "Linea1" : linea1,
-            "Linea2" : linea2,
-            "Linea3" : linea3
+            "Linea1" : lineaA,
+            "Linea2" : lineaB,
+            "Linea3" : lineaC
         }
     };
 
     cartones.push(cartonNuevo);
+}
+
+var CantarVariosNumeros = function(numerosTxt) {
+    var listaNumeros = numerosTxt.split(",");
+    listaNumeros.forEach(numeroACantar => {
+        CantarNumero(numeroACantar);       
+    });
 }
